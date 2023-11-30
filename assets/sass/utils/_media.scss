@@ -31,6 +31,67 @@
             }
         }
     }
+    .footer{
+        padding: 50px 0;
+        .footer_container{
+            .footer_navbar{
+                &__logo{
+                    width: 178px;
+                    height: 60px;
+                }
+                &__right{
+                    gap: 108px;
+                    .footer_navbar__list{
+                        gap: 30px;
+                        .footer_navbar__link{
+                            font-size: 18px;
+                        }
+                    }
+                    .footer_navbar__group{
+                        padding: 14px 14px 14px 24px;
+                        border-radius: 12px;
+                        .footer_navbar__excerpt{
+                            font-size: 18px;
+                        }
+                        .footer_bott__social{
+                            gap: 14px;
+                            .footer_bott__media{
+                                border-radius: 8px;
+                                padding: 20px;
+                                width: 66px;
+                                height: 66px;
+                                .footer_navbar__icon{
+                                    width: 24px;
+                                    height: 24px;
+                                }   
+                            }
+                        }
+                    }
+                }
+            }
+            .footer_line{
+                margin: 50px 0;
+            }
+            .footer_bott{
+                .footer_bott__group{
+                    gap: 30px;
+                    .footer_bott__link{
+                        font-size: 18px;
+                        padding-bottom: 16px;
+                        .footer_bott__image{
+                            margin-right: 10px;
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+                }
+                &__copy{
+                    font-size: 18px;
+                }
+            }
+    
+        }
+    }
 }
 
 @media only screen and (max-width: 768px){
