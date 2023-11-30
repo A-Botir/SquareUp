@@ -2,574 +2,169 @@
 .main{
     .main_content{
         .hero{
-            @include dFlex;
-            flex-direction: column;
-            padding-top: 80px;
-            padding-bottom: 100px;
-            position: relative;
-            &__title{
-                max-width: 645px;
-                border-radius: 8px;
-                border: 1px solid var(--white-95, #F1F1F3);
-                background: var(--white-99, #FCFCFD);
-                color:#1A1A1A;
-                font-size: 36px;
-                font-weight: 600;
-                line-height: 150%;
-                padding: 12px 24px 12px 12px;
-                margin: 0 0 16px 0;
-                &--img{
-                    border-radius: 6px;
-                    background: var(--orange-95, #FFF4E5);
-                    padding: 12px;
-                    width: 48px;
-                    height: 48px;
-                    margin-right: 10px;
-                    vertical-align: middle;
-                }
-                .hero_title--orange{
-                    color: #FF9500;
-                }
-            }
-            .hero__title--element{
-                position: absolute;
-                top: 50px;
-                left: 290px;
-            }
-            &__subtitle{
-                color: var(--grey-15, #262626);
-                text-align: center;
-                font-size: 28px;
-                font-weight: 500;
-                line-height: 150%;
-                margin-bottom: 6px;
-            }
-            &__text{
-                color: #262626;
-                text-align: center;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 150%;
-                margin-bottom: 50px;
-            }
-            &__btn_group{
+            background: linear-gradient(0deg, rgba(172, 255, 36, 0.20)  0%, rgba(172, 255, 36, 0.20)100%),
+            url("/assets/image/back/background\ image.png") lightgray 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 1280px 316px;
+            .hero__back{
                 @include dFlex;
-                gap: 12px;
-                .hero__btn_1{
+                flex-direction: column;
+                background:  url("/assets/image/back/back_dots.png"), 100px 100px repeat, rgba(38, 38, 38, 0.7);
+                background-blend-mode: multiply;
+                padding: 100px 250px;
+                border: 1px solid var(--grey-15, #262626);
+                &__title{
                     text-align: center;
-                    font-size: 14px;
-                    background-color: #FF9500;
-                    color: #FFF;
+                    color: var(--absolute-white, #FFF);
+                    font-size: 38px;
                     font-weight: 600;
-                    padding: 14px 20px;
-                    border-radius: 6px;
+                    line-height: normal;
+                    margin-bottom: 0;
+                    
                 }
-                .hero__btn_2{
+                &__subtitle{
+                    color: var(--grey-90, #E6E6E6);
                     text-align: center;
-                    font-size: 14px;
-                    padding: 14px 20px;
-                    background-color: #FFF;
-                    border: 1px solid #F1F1F3;
-                    color: #262626;
-                    font-weight: 500;
+                    font-size: 18px;                
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: -0.108px;
+                }
+            }
+        }
+        .page_container{
+            border: 1px solid var(--grey-15, #262626);
+            padding-top: 80px;
+            .page_container__top{
+                padding: 40px 0 40px 40px;
+                .page_container__title{
+                    color: var(--absolute-white, #FFF);
+                    font-size: 38px;
+                    font-weight: 600;
+                    line-height: normal;
+                    margin-bottom: 10px;
+                }
+                .page_container__subtitle{
+                    color: var(--grey-90, #E6E6E6);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 150%; /* 24px */
+                    letter-spacing: -0.096px;
+                    width: 950px;
+                    margin-bottom: 40px;
+                }
+                .page_container__view{
                     border-radius: 6px;
+                    background: var(--grey-15, #262626);
+                    padding: 10px;
+                    color: var(--absolute-white, #FFF);
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: normal;
+                    max-width: 239px;
                 }
             }
-
-
-        }
-        .companies{
-            @include dFlex;
-            padding: 24px;
-            border-radius: 8px;
-            border: 1px solid #F1F1F3;
-            background: #FCFCFD;
-            max-width: 1232px;
-            margin-bottom: 80px;
-            .companies__logo{
-                padding: 20px 30px;
-                border-right: 1px solid #F1F1F3;
-                min-width: 175px;
-                height: 68px;
-                &--border{
-                    border: none;
-                }
-            }
-        }
-        .video{
-            @include dFlex;
-            margin-bottom: 100px;
-            .video__group{
-                position: relative;
-                border-radius: 10px;
-                border: 16px solid #F7F7F8;
-                .video__image{
-                    border-radius: 10px;
-                    width: 1280px;
-                    height: 650px;
-                    &--element{
-                        position: absolute;
-                        z-index: 5;
-                        top: 297px;
-                        left: 628px;
-                        right: 0;
-                        width: 54px;
-                        height: 54px;
-                        padding: 10px;
-                        border-radius: 50%;
-                        border: 4px solid rgba(255, 255, 255, 0.30);
-                        background: rgba(255, 255, 255, 0.20);
-                    }
-                }
-            }
-        }
-        .benefits{
-            margin-bottom: 100px;
-            &__top{
-                margin-bottom: 60px;
-                @include dFlex(space-between, end);
-                .benefits__text{
-                    .benefits__title{
-                        color: var(--grey-15, #262626);
-                        font-size: 38px;
-                        font-weight: 600;
-                        line-height: 150%;
-                        margin-bottom: 4px;
-                    }
-                    .benefits__subtitle{
-                        width: 933px;
-                        color: var(--grey-35, #59595A);
-                        font-size: 16px;
-                        font-weight: 400;
-                        line-height: 150%;
-                    }
-                }
-                .benefits__btn{
-                    color: var(--grey-15, #262626);
-                    text-align: center;
-                    font-size: 14px;
+            .page_subcontainer{
+                border-top: 1px solid var(--grey-15, #262626);
+                .page_subcontainer__title{
+                    margin: 40px 0 40px 40px;
+                    color: var(--grey-60, #98989A);
+                    font-size: 22px;
                     font-weight: 500;
-                    line-height: 150%;
-                    padding: 14px 20px;
-                    border-radius: 6px;
-                    border: 1px solid var(--white-95, #F1F1F3);
-                    background: var(--white-99, #FCFCFD);
+                    line-height: normal;
+                    width: 100%;
                 }
-
-            }
-            &_card__container{
-                @include dFlex;
-                gap: 20px;
-                flex-wrap: wrap;
-                .benefits_card{
-                    display: flex;
-                    justify-content: space-between;
-                    flex-direction: column;
-                    padding: 40px;
-                    max-width: 413px;
-                    min-height: 370px;
-                    max-height: 371px;
-                    border-radius: 10px;
-                    box-sizing: border-box;
-                    background: var(--absolute-white, #FFF);
-                    &__title{
-                        color: var(--grey-15, #262626);
-                        text-align: right;
-                        font-size: 60px;
-                        font-weight: 700;
-                        line-height: 24px;
-                        height: 60px;
-                    }
-                    &__subtitle{
-                        color: #333;
-                        font-size: 20px;
-                        font-weight: 600;
-                        line-height: 150%;
-                        letter-spacing: -0.12px;
-                        width: 333px;
-                        margin-bottom: 10px;
-                    }
-                    &__text{
-                        color: var(--grey-15, #4C4C4D);
-                        font-size: 16px;
-                        font-weight: 400;
-                        line-height: 150%;
-                        width: 333px;
-                    }
-                    &__btn{
-                        display:block;
-                        padding: 14px;
-                        border-radius: 6px;
-                        border: 1px solid var(--white-95, #F1F1F3);
-                        background: var(--white-99, #FCFCFD);
-                        width: 54px;
-                        height: 54px;
-                        margin-right: 0;
-                        margin-left: auto;
-                    }
-                }
-            }
-        }
-        .our_courses{
-            margin-bottom: 100px;
-            .courses__top{
-                @include dFlex( space-between, end);
-                margin-bottom: 60px;
-                .courses__text{
-                    max-width: 933px;
-                    .courses__title{
-                        color: var(--grey-15, #262626);
-                        font-size: 38px;
-                        font-weight: 600;
-                        line-height: 150%;
-                        margin-bottom: 4px;
-                    }
-                    .courses__subtitle{
-                        color: var(--grey-35, #59595A);
-                        font-size: 16px;
-                        font-weight: 400;
-                        line-height: 150%;
-                    }
-                }
-                .courses__btn{
-                    color: var(--grey-15, #262626);
-                    text-align: center;
-                    font-size: 14px;
-                    font-weight: 500;
-                    line-height: 150%;
-                    padding: 14px 20px;
-                    border-radius: 6px;
-                    border: 1px solid var(--white-95, #F1F1F3);
-                    background: var(--white-99, #FCFCFD);
-                }
-            }
-            .courses_card__container{
-                @include dFlex;
-                flex-wrap: wrap;
-                gap: 20px;
-                .courses_card{
-                    @include dFlex( space-between, center);
-                    flex-direction: column;
-                    border-radius: 10px;
-                    border: 1px solid var(--white-95, #F1F1F3);
-                    background: var(--absolute-white, #FFF);
-                    padding: 40px;
-                    max-width: 630px;
-                    min-height: 613px;
-                    .courses_card__image{
-                        border-radius: 8px;
-                        width: 550px;
-                        height: 266px;
-                        overflow: hidden;
-                        .courses_card__img{
-                            max-width: 100%;
-                            width: 100%;
-                            max-height: 100%;
-                            object-fit: cover;
+                .page_subcontainer__group{
+                    @include dFlex;
+                    border-top: 1px solid var(--grey-15, #262626);
+                    border-bottom: 1px solid var(--grey-15, #262626);
+                    .page_subcontainer__line{
+                        display: block;
+                        width: 1px;
+                        height: 216px;
+                        background: #262626;
+                        &--height{
+                            height: 240px;
                         }
                     }
-                    .courses_card__content{
-                        .courses_card__group{
-                            @include dFlex( space-between, center);
-                            margin-bottom: 24px;
-                            .courses_card__text{
-                                @include dFlex;
-                                gap: 10px;
-                                &--pad{
-                                    padding: 8px 14px;
-                                    border-radius: 6px;
-                                    border: 1px solid var(--white-95, #F1F1F3);
-                                    background: var(--absolute-white, #FFF);
-                                    color: var(--grey-30, #4C4C4D);
-                                    font-size: 14px;
-                                    font-weight: 400;
-                                    line-height: normal;
-                                }
-                            }
-                            &--name{
-                                color: var(--grey-15, #262626);
-                                font-size: 16px;
-                                font-weight: 500;
-                                line-height: normal;
-                            }
-                        }
-                        .courses_card__title{
-                            margin-bottom: 10px;
-                            color: var(--grey-15, #262626);
-                            font-size: 20px;
-                            font-weight: 600;
-                            line-height: 150%; 
-                        }
-                        .courses_card__subtitle{
-                            color: var(--grey-30, #4C4C4D);
-                            font-size: 16px;
-                            font-weight: 400;
-                            line-height: 150%;
-                        }
-                    }
-                    .courses_card_link{
-                        width: 100%;
-                        .courses_card__button{
-                            width: 100%;
-                            padding: 14px 24px;
-                            border-radius: 6px;
-                            border: 1px solid var(--white-95, #F1F1F3);
-                            background: var(--white-97, #F7F7F8);
-                            color: var(--grey-15, #262626);
-                            text-align: center;
-                            font-size: 14px;
-                            font-weight: 500;
-                            line-height: 150%;
-                        }
-                    }
-                }
-            }
-        }
-        .testimonials{
-            margin-bottom: 100px;
-            &__top{
-                @include dFlex( space-between, end);
-                margin-bottom: 60px;
-                .testimonials__text{
-                    max-width: 933px;
-                    .testimonials__title{
-                        color: var(--grey-15, #262626);
-                        font-size: 38px;
-                        font-weight: 600;
-                        line-height: 150%;
-                        margin-bottom: 4px;
-                    }
-                    .testimonials__subtitle{
-                        color: var(--grey-35, #59595A);
-                        font-size: 16px;
-                        font-weight: 400;
-                        line-height: 150%;
-                    }
-                }
-                .testimonials__btn{
-                    color: var(--grey-15, #262626);
-                    text-align: center;
-                    font-size: 14px;
-                    font-weight: 500;
-                    line-height: 150%;
-                    padding: 14px 20px;
-                    border-radius: 6px;
-                    border: 1px solid var(--white-95, #F1F1F3);
-                    background: var(--white-99, #FCFCFD);
-                }
-            }
-            &_card__container{
-                @include dFlex;
-                flex-wrap: wrap;
-                gap: 20px;
-                .testimonials_card{
-                    box-sizing: border-box;
-                    max-width: 630px;
-                    min-height: 250px;
-                    border-radius: 10px;
-                    border: 1px solid var(--white-95, #F1F1F3);
-                    background: var(--absolute-white, #FFF);
-                    &__text {
+                    .page_subcontainer__card{
+                        @include dFlex( left, start);
+                        flex-direction: column;
+                        gap: 24px;
                         padding: 40px;
-                        border-bottom: 1px solid #F7F7F8;
-                        color: var(--grey-30, #4C4C4D);
-                        font-size: 16px;
-                        font-weight: 400;
-                        line-height: 150%;
-                    }
-                    &__bott {
-                        @include dFlex( space-between, center);
-                        padding: 24px 40px;
-                        .testimonials_card__group{
-                            @include dFlex;
-                            gap: 10px;
-                            .testimonials_card__avatar{
-                                width: 50px;
-                                height: 50px;
-                                border-radius: 6px;
-                                object-fit: cover;
-                            }
-                            .testimonials_card__name{
-                                color: var(--grey-20, #333);
-                                font-size: 16px;
-                                font-weight: 600;
-                                line-height: 150%;
+                        max-width: 320px;
+                        min-height: 216px;
+                        &--height{
+                            min-height: 240px;
+                        }
+                        .page_subcontainer__link{
+                            padding: 20px;
+                            border-radius: 8px;
+                            border: 1px solid #2E2E2E;
+                            background: linear-gradient(229deg, rgba(158, 255, 0, 0.20) -68.25%, rgba(158, 255, 0, 0.00) 32.16%), linear-gradient(180deg, #242424 0%, rgba(36, 36, 36, 0.00) 100%);
+                            .page_subcontainer__img{
+                                width: 24px;
+                                height: 24px;
+                                vertical-align: middle;
                             }
                         }
-                        .testimonials_card__btn{
-                            padding: 14px 16px;
-                            border-radius: 6px;
-                            border: 1px solid var(--white-95, #F1F1F3);
-                            background: var(--white-97, #F7F7F8);
-                            color: var(--grey-15, #262626);
-                            text-align: center;
-                            font-size: 14px;
+                        .page_subcontainer__text{
+                            color: var(--grey-90, #E6E6E6);
+                            font-size: 16px;
                             font-weight: 500;
                             line-height: 150%;
+                            letter-spacing: -0.096px;
                         }
                     }
                 }
             }
         }
-        .our_pricing{
-            margin-bottom: 100px;
-            .pricing__top{
-                @include dFlex( space-between, end);
-                margin-bottom: 60px;
-                .pricing__text{
-                    max-width: 809px;
-                    .pricing__title{
-                        color: var(--grey-15, #262626);
-                        font-size: 38px;
-                        font-weight: 600;
-                        line-height: 150%;
-                        margin-bottom: 4px;
-                    }
-                    .pricing__subtitle{
-                        color: var(--grey-35, #59595A);
-                        font-size: 16px;
-                        font-weight: 400;
-                        line-height: 150%;
-                    }
-                }
-                .pricing__btn_group{
-                    @include dFlex;
-                    padding: 12px;
-                    border-radius: 8px;
-                    background: var(--absolute-white, #FFF);
-                    .pricing__btn{
-                        border-radius: 6px;
-                        padding: 12px 24px;
-                        color: var(--grey-30, #4C4C4D);
-                        font-size: 14px;
-                        font-weight: 500;
-                        line-height: 150%;
-                        &--orange{
-                            color: #FFF;
-                            background-color: #FF9500;
-                        }
-                    }
-                }
-            }
-            .pricing_card__container{
+        .project{
+            background: linear-gradient(0deg, rgba(172, 255, 36, 0.20)  0%, rgba(172, 255, 36, 0.20)100%),
+            url("/assets/image/back/background\ image.png") lightgray 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 1280px 507px;
+            border: 1px solid var(--grey-15, #262626);
+            .project_content{
                 @include dFlex;
-                flex-wrap: wrap;
-                gap: 30px;
-                border-radius: 12px;
-                background-color: #FFF;
-                padding: 50px;
-                .pricing_card{
-                    @include dFlex;
-                    flex-direction: column;
-                    gap: 50px;
-                    box-sizing: border-box;
-                    max-width: 582px;
-                    padding: 40px 24px 24px 24px;
-                    border-radius: 12px;
-                    border: 1px solid var(--white-95, #F1F1F3);
-                    background: var(--white-99, #FCFCFD);
-                    &__title {
-                        text-align: center;
-                        padding: 10px 22px;
-                        width: 100%;
-                        border-radius: 4px;
-                        border: 1px solid var(--orange-90, #FFEACC);
-                        background: var(--orange-97, #FFF9F0);
-                        color: var(--grey-15, #262626);
-                        font-size: 18px;
-                        font-weight: 500;
-                        line-height: 169%;
-                    }
-                    .pricing_card__price {
-                        color: var(--grey-30, #4C4C4D);
-                        font-size: 16px;
-                        font-weight: 500;
-                        line-height: 73%; 
-                        &--big{
-                            color: var(--grey-15, #262626);
-                            font-size: 60px;
-                            font-weight: 600;
-                            line-height: 73%;
-                        }
-                    }
-                    .pricing_form{
-                        border-radius: 14px;
-                        border: 1px solid var(--white-95, #F1F1F3);
-                        background: var(--absolute-white, #FFF);
-                        &__content{
-                            padding: 30px;
-                            .pricing_form__title{
-                                color: var(--grey-15, #262626);
-                                text-align: center;
-                                font-size: 18px;
-                                font-weight: 500;
-                                line-height: 150%;
-                                margin-bottom: 24px
-                                ;
-                            }
-                            .pricing_form__labels{
-                                @include dFlex( left, center);
-                                flex-direction: column;
-                                gap: 20px;
-                                padding: 0 30px;
-                                .pricing_form__label{
-                                    width: 100%;
-                                    display: block;
-                                    padding: 12px;
-                                    border-radius: 6px;
-                                    border: 1px solid var(--white-95, #F1F1F3);
-                                    cursor: pointer;
-                                    .pricing_form__text{
-                                        color: var(--grey-30, #4C4C4D);
-                                        font-size: 14px;
-                                        font-weight: 400;
-                                        line-height: 150%;
-                                    }
-
-                                    .pricing_form__checkbox {
-                                        display: none;
-                                        &:not(:checked) + span::before {
-                                            content: "❌";
-                                            background-color: #FFF;
-                                            margin-right: 8px;
-                                            padding: 4px;
-                                            border-radius: 4px;
-                                            max-width: 24px;
-                                            max-height: 24px;
-                                            width: 100%;
-                                            height: 100%;
-                                        }
-                                        &:checked + span::before {
-                                            content: "✔";
-                                            background-color: #FFF4E5;
-                                            margin-right: 8px;
-                                            padding: 4px 5.4px;
-                                            border-radius: 4px;
-                                            max-width: 24px;
-                                            max-height: 24px;
-                                            width: 100%;
-                                            height: 100%;
-                                        }
-                                    }
-
-                                }
-                            }
-                        }
-                        .pricing_form__btn{
-                            width: 100%;
-                            padding: 18px 24px;
-                            border-radius: 0px 0px 8px 8px;
-                            background-color: #FF9500;
-                            color: var(--absolute-white, #FFF);
-                            text-align: center;
-                            font-size: 14px;
-                            font-weight: 600;
-                            line-height: 150%;
-                        }
-                    }
+                flex-direction: column;
+                background:  url("/assets/image/back/back_dots.png"), 100px 100px repeat, rgba(38, 38, 38, 0.7);
+                background-blend-mode: multiply;
+                padding: 100px 0;
+                &__img {
+                    width: 60px;
+                    height: 60px;
+                    margin-bottom: 40px;
+                }
+                &__title{
+                    color: var(--absolute-white, #FFF);
+                    text-align: center;
+                    font-size: 30px;
+                    font-weight: 600;
+                    line-height: normal;
+                    margin-bottom: 10px;
+                }
+                &__text{
+                    color: var(--grey-90, #E6E6E6);
+                    text-align: center;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 150%;
+                    letter-spacing: -0.096px;
+                    width: 780px;
+                    margin-bottom: 40px;
+                }
+                .project_content__btn{
+                    border-radius: 6px;
+                    padding: 14px 24px;
+                    color: var(--grey-10, #1A1A1A);
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 150%;
                 }
             }
         }
-
     }
 }
