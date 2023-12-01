@@ -10,20 +10,19 @@
             .hero__back{
                 @include dFlex;
                 flex-direction: column;
+                gap: 10px;
                 background:  url("/assets/image/back/back_dots.png"), 100px 100px repeat, rgba(38, 38, 38, 0.7);
                 background-blend-mode: multiply;
                 padding: 100px 250px;
                 border: 1px solid var(--grey-15, #262626);
-                &__title{
+                .hero__title{
                     text-align: center;
                     color: var(--absolute-white, #FFF);
                     font-size: 38px;
                     font-weight: 600;
                     line-height: normal;
-                    margin-bottom: 0;
-                    
                 }
-                &__subtitle{
+                .hero__subtitle{
                     color: var(--grey-90, #E6E6E6);
                     text-align: center;
                     font-size: 18px;                
@@ -37,7 +36,7 @@
             border: 1px solid var(--grey-15, #262626);
             padding-top: 80px;
             .page_container__top{
-                padding: 40px 0 40px 40px;
+                padding: 0 40px 40px 40px;
                 .page_container__title{
                     color: var(--absolute-white, #FFF);
                     font-size: 38px;
@@ -82,11 +81,8 @@
                     .page_subcontainer__line{
                         display: block;
                         width: 1px;
-                        height: 216px;
+                        min-height: 216px;
                         background: #262626;
-                        &--height{
-                            height: 240px;
-                        }
                     }
                     .page_subcontainer__card{
                         @include dFlex( left, start);
@@ -132,7 +128,7 @@
                 flex-direction: column;
                 background:  url("/assets/image/back/back_dots.png"), 100px 100px repeat, rgba(38, 38, 38, 0.7);
                 background-blend-mode: multiply;
-                padding: 100px 0;
+                padding: 100px 250px;
                 &__img {
                     width: 60px;
                     height: 60px;

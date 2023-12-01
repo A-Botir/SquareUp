@@ -250,20 +250,20 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 10px;
   background: url("/assets/image/back/back_dots.png"), 100px 100px repeat, rgba(38, 38, 38, 0.7);
   background-blend-mode: multiply;
   padding: 100px 250px;
   border: 1px solid var(--grey-15, #262626);
 }
-.main .main_content .hero .hero__back__title {
+.main .main_content .hero .hero__back .hero__title {
   text-align: center;
   color: var(--absolute-white, #FFF);
   font-size: 38px;
   font-weight: 600;
   line-height: normal;
-  margin-bottom: 0;
 }
-.main .main_content .hero .hero__back__subtitle {
+.main .main_content .hero .hero__back .hero__subtitle {
   color: var(--grey-90, #E6E6E6);
   text-align: center;
   font-size: 18px;
@@ -276,7 +276,7 @@ button {
   padding-top: 80px;
 }
 .main .main_content .page_container .page_container__top {
-  padding: 40px 0 40px 40px;
+  padding: 0 40px 40px 40px;
 }
 .main .main_content .page_container .page_container__top .page_container__title {
   color: var(--absolute-white, #FFF);
@@ -325,11 +325,8 @@ button {
 .main .main_content .page_container .page_subcontainer .page_subcontainer__group .page_subcontainer__line {
   display: block;
   width: 1px;
-  height: 216px;
+  min-height: 216px;
   background: #262626;
-}
-.main .main_content .page_container .page_subcontainer .page_subcontainer__group .page_subcontainer__line--height {
-  height: 240px;
 }
 .main .main_content .page_container .page_subcontainer .page_subcontainer__group .page_subcontainer__card {
   display: flex;
@@ -376,7 +373,7 @@ button {
   flex-direction: column;
   background: url("/assets/image/back/back_dots.png"), 100px 100px repeat, rgba(38, 38, 38, 0.7);
   background-blend-mode: multiply;
-  padding: 100px 0;
+  padding: 100px 250px;
 }
 .main .main_content .project .project_content__img {
   width: 60px;
@@ -436,6 +433,97 @@ button {
   .header .header_container .header_navbar__button {
     border-radius: 8px;
     padding: 16px 24px;
+    font-size: 18px;
+  }
+  .main .main_content .hero {
+    background-size: 1596px 336px;
+  }
+  .main .main_content .hero .hero__back {
+    gap: 14px;
+    padding: 120px 300px;
+  }
+  .main .main_content .hero .hero__back .hero__title {
+    font-size: 48px;
+  }
+  .main .main_content .hero .hero__back .hero__subtitle {
+    font-size: 20px;
+  }
+  .main .main_content .page_container {
+    padding-top: 120px;
+  }
+  .main .main_content .page_container .page_container__top {
+    padding: 0 50px 50px 50px;
+  }
+  .main .main_content .page_container .page_container__top .page_container__title {
+    font-size: 48px;
+    margin-bottom: 14px;
+  }
+  .main .main_content .page_container .page_container__top .page_container__subtitle {
+    font-size: 18px;
+    width: 1196px;
+    margin-bottom: 50px;
+  }
+  .main .main_content .page_container .page_container__top .page_container__view {
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 22px;
+    max-width: 296px;
+  }
+  .main .main_content .page_container .page_subcontainer .page_subcontainer__title {
+    margin: 50px 0 50px 50px;
+    font-size: 28px;
+  }
+  .main .main_content .page_container .page_subcontainer .page_subcontainer__group .page_subcontainer__line {
+    min-height: 278px;
+  }
+  .main .main_content .page_container .page_subcontainer .page_subcontainer__group .page_subcontainer__line--height {
+    min-height: 313px;
+  }
+  .main .main_content .page_container .page_subcontainer .page_subcontainer__group .page_subcontainer__card {
+    gap: 30px;
+    padding: 50px;
+    max-width: 399px;
+    width: 100%;
+    min-height: 278px;
+  }
+  .main .main_content .page_container .page_subcontainer .page_subcontainer__group .page_subcontainer__card--height {
+    min-height: 308px;
+  }
+  .main .main_content .page_container .page_subcontainer .page_subcontainer__group .page_subcontainer__card .page_subcontainer__link {
+    padding: 24px;
+    border-radius: 12px;
+  }
+  .main .main_content .page_container .page_subcontainer .page_subcontainer__group .page_subcontainer__card .page_subcontainer__link .page_subcontainer__img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+  }
+  .main .main_content .page_container .page_subcontainer .page_subcontainer__group .page_subcontainer__card .page_subcontainer__text {
+    font-size: 20px;
+  }
+  .main .main_content .project {
+    background-size: 1595px 624px;
+  }
+  .main .main_content .project .project_content {
+    padding: 120px 350px;
+  }
+  .main .main_content .project .project_content__img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 50px;
+  }
+  .main .main_content .project .project_content__title {
+    font-size: 38px;
+    margin-bottom: 14px;
+  }
+  .main .main_content .project .project_content__text {
+    font-size: 18px;
+    width: 895px;
+    margin-bottom: 50px;
+  }
+  .main .main_content .project .project_content .project_content__btn {
+    border-radius: 12px;
+    padding: 18px 34px;
     font-size: 18px;
   }
   .footer {
@@ -509,6 +597,100 @@ button {
   }
   .header .header_container .header_navbar__menu {
     display: block;
+  }
+  .main .main_content .hero {
+    background-size: 358px 158px;
+  }
+  .main .main_content .hero .hero__back {
+    gap: 6px;
+    padding: 50px 16px;
+  }
+  .main .main_content .hero .hero__back .hero__title {
+    font-size: 28px;
+  }
+  .main .main_content .hero .hero__back .hero__subtitle {
+    font-size: 14px;
+  }
+  .main .main_content .page_container {
+    border: 1px solid var(--grey-15, #262626);
+    padding-top: 40px;
+  }
+  .main .main_content .page_container .page_container__top {
+    padding: 0 16px 40px 16px;
+  }
+  .main .main_content .page_container .page_container__top .page_container__title {
+    font-size: 28px;
+    margin-bottom: 6px;
+  }
+  .main .main_content .page_container .page_container__top .page_container__subtitle {
+    font-size: 14px;
+    width: 326px;
+    margin-bottom: 30px;
+  }
+  .main .main_content .page_container .page_container__top .page_container__view {
+    font-size: 16px;
+    max-width: 215px;
+  }
+  .main .main_content .page_container .page_subcontainer .page_subcontainer__title {
+    margin: 40px 0;
+    text-align: center;
+    font-size: 20px;
+  }
+  .main .main_content .page_container .page_subcontainer .page_subcontainer__group {
+    flex-wrap: wrap;
+  }
+  .main .main_content .page_container .page_subcontainer .page_subcontainer__group .page_subcontainer__line {
+    width: 1px;
+    min-height: 188px;
+  }
+  .main .main_content .page_container .page_subcontainer .page_subcontainer__group .page_subcontainer__line--none {
+    min-height: 0;
+    height: 1px;
+    width: 100%;
+  }
+  .main .main_content .page_container .page_subcontainer .page_subcontainer__group .page_subcontainer__card {
+    gap: 20px;
+    padding: 20px;
+    max-width: 177.5px;
+    min-height: 188px;
+  }
+  .main .main_content .page_container .page_subcontainer .page_subcontainer__group .page_subcontainer__card--height {
+    min-height: 240px;
+  }
+  .main .main_content .page_container .page_subcontainer .page_subcontainer__group .page_subcontainer__card--border {
+    vertical-align: middle;
+  }
+  .main .main_content .page_container .page_subcontainer .page_subcontainer__group .page_subcontainer__card .page_subcontainer__link {
+    padding: 16px;
+    border-radius: 6px;
+    min-width: 56px;
+    max-width: 58px;
+    min-height: 56px;
+    max-height: 58px;
+  }
+  .main .main_content .page_container .page_subcontainer .page_subcontainer__group .page_subcontainer__card .page_subcontainer__link .page_subcontainer__img {
+    width: 100%;
+    height: 100%;
+  }
+  .main .main_content .project {
+    background-size: 358px 463px;
+  }
+  .main .main_content .project .project_content {
+    padding: 50px 16px;
+  }
+  .main .main_content .project .project_content__img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 28px;
+  }
+  .main .main_content .project .project_content__title {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .main .main_content .project .project_content__text {
+    font-size: 14px;
+    margin-bottom: 28px;
+    width: 326px;
   }
   .footer {
     padding: 30px 0;
